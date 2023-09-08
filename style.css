@@ -1,0 +1,121 @@
+@font-face {
+    font-family:'downloaded';
+    src: url(font.ttf);
+ }
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+ body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+ }
+.cont
+{
+    display: flex;
+    max-width: 1100px;
+}
+ 
+/* left-side */
+
+.left{
+    flex:1;
+    background-color: #978bb7;
+    color: white;
+    padding:26px;
+}
+.left h1{
+    font-size: 39px;
+    font-family:cursive;
+}
+.left img{
+    width:230px;
+    height: 230px;
+    margin:30px 0px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid whitesmoke;
+}
+.left div{
+    font-size: 20px;
+   
+}
+.left div a{
+    color:white;
+}
+ .left div a:hover{
+    text-decoration: none;
+ }
+.FB{
+   position: absolute;
+   top:10px;
+   font-size: 20px;
+   font-weight: bold;
+   font-family: cursive;
+   color: rgb(86, 77, 210);
+   left: 30px;
+   text-decoration: none;
+   transition: .2s;
+}
+.FB:hover{
+    color: #9f57bb;
+}
+.IG{
+    position: absolute;
+    top: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+    color: rgb(86, 77, 210);
+    left: 30px;
+    text-decoration: none;
+    transition: .2s;
+}
+.IG:hover{
+    color: #9f57bb;
+}
+/* right-side */
+
+.right
+{
+       flex: 1.4;
+    padding:20px 0 20px 40px;
+}
+
+.right .circle{
+    width: 70px;
+    height: 70px;
+    background-color:rgb(240, 153, 77);
+    border-radius: 50%;
+}
+.right p{
+    font-size: 20px;
+    line-height: 35px;
+    color: rgb(17, 17, 17);
+    margin: 40px 0;
+}
+.right .btn{
+    cursor: pointer;
+    display: inline-block;
+    background-color: #978bb7;
+    padding:20px 50px;
+    font-weight: bold;
+    color: white;
+    transition:.3s;
+}
+.right .btn:hover{
+    background-color:rgb(240, 153, 77);
+}
+@media (max-width:735px){
+  body{
+    padding: 10px;
+  }
+    .cont
+  {
+    flex-direction: column;
+  }
+}
